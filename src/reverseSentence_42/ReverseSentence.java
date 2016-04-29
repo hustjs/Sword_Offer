@@ -9,6 +9,7 @@ public class ReverseSentence {
 		Scanner scanner=new Scanner(System.in);
 		String sentence=scanner.nextLine();
 		System.out.println(Reverse_Sentence(sentence));
+		scanner.close();
 	}
 	public static String Reverse_Sentence(String str){
 		String[] string=Reverse(str,0,str.length()).split(" ");
@@ -19,8 +20,6 @@ public class ReverseSentence {
 		return strRS;
 	}
 	public static String Reverse(String str,int index,int length){
-		//StringBuffer strbuf=new StringBuffer(str);
-		//str=strbuf.reverse().toString();
 		char[] ch=str.toCharArray();
 		str="";
 		for(int i=0;i<index;i++)

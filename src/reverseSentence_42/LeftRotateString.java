@@ -9,6 +9,7 @@ public class LeftRotateString {
 		Scanner scanner=new Scanner(System.in);
 		String sentence=scanner.nextLine();
 		System.out.println(LeftRotate(sentence, 3));
+		scanner.close();
 	}
 	public static String LeftRotate(String str,int index) {
 		str=ReverseSentence.Reverse(str, 0, index);
